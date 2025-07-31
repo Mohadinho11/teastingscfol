@@ -68,7 +68,10 @@ import TheSlectedCHildrenGrade from "./components/parant/pages/TheSlectedCHildre
 import TheSelectedChildrenGrade from "./components/parant/pages/TheSlectedCHildrenGrade";
 import PrantFeeREcord from "./components/parant/pages/PrantFeeREcord";
 import PrantsMss from "./components/parant/pages/PrantsMss";
+import Program from "./pages/Programs";
 
+import About from "./pages/AboutPage";
+import AddmisonPage from "./pages/AddmisonPage";
 const App = () => {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
   const [loading, setLoading] = useState(false); // 👈 global loading state
@@ -116,6 +119,9 @@ const App = () => {
     <Routes>
       <Route path="/logout" element={<Logout />} />
       <Route path="/" element={<MainPage />} />
+      <Route path="/Program" element={<Program />} />
+      <Route path="/Addmison" element={<AddmisonPage/>} />
+      <Route path="/about" element={<About />} />
       <Route path="auth" element={<Authpage />}>
         <Route path="login" element={<Login />} />
       </Route>
